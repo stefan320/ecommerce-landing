@@ -1,0 +1,17 @@
+@font-face {
+  font-family: helveticaNeue;
+  src: url(assets/fonts/HelveticaNeue-Medium.woff);
+}
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(assets/fonts/HelveticaNeueBold.woff);
+  font-weight: 700;
+}
+html {
+  //Sets the font size to 10px to make it easier using rem units
+  font-size: 62.5% !important;
+}
+body {
+  font-family: helveticaNeue;
+  font-size: inherit !important;
+}
