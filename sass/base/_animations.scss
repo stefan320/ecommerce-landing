@@ -1,0 +1,26 @@
+@keyframes fullHeight {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 30vh;
+  }
+}
+
+@keyframes noHeight {
+  0% {
+    height: 30vh;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

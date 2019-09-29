@@ -10,8 +10,22 @@
 html {
   //Sets the font size to 10px to make it easier using rem units
   font-size: 62.5% !important;
+  scroll-behavior: smooth;
 }
 body {
   font-family: helveticaNeue;
   font-size: inherit !important;
+  color: $color--primary--dark;
+}
+
+textarea,
+input[type],
+button {
+  font-size: inherit;
+  border-radius: 0;
+}
+
+textarea::placeholder,
+input[type]::placeholder {
+  color: $color--primary;
 }

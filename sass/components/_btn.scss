@@ -1,0 +1,15 @@
+.btn {
+  padding: 1.8rem 6.5rem;
+  font-size: 1.2rem;
+  &--danger {
+    background-color: $color--secondary;
+    color: $color--white;
+  }
+  &--dark {
+    background-color: $color--primary--dark;
+    color: $color--white;
+  }
+  &--full {
+    width: 100%;
+  }
+}

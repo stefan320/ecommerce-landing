@@ -1,0 +1,12 @@
+.text--light {
+  color: $color--primary;
+}
+.text--white {
+  color: $color--white;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

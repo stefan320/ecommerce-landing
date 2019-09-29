@@ -594,7 +594,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
-  padding: 3px;
+  padding: 6px;
 }
 
 input[type="text"]:focus,

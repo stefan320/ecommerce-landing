@@ -1,0 +1,9 @@
+@mixin wrapper {
+  padding: 0 1.8rem;
+}
+
+@mixin tab-port() {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
