@@ -7,7 +7,7 @@ $(document).ready(function() {
     // next arrow
     nextArrow:
       '<button type="button" data-role="none" class="slick__arrow slick__arrow--next"></button>',
-    autoplay: false,
+    autoplay: true,
     // Auto play change interval
     autoplaySpeed: 2000,
     // Transition speed

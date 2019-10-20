@@ -1,17 +1,51 @@
 .contact {
   background-color: $color--primary--light;
   text-align: center;
-  &--map {
+
+  &--box {
+    @include desktop-sm {
+      @include wrapper;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 4rem;
+    }
+  }
+  &__map {
     border-top: 1px solid $color--primary;
+
+    @include desktop-sm {
+      border: none;
+      padding: 0;
+      height: 261px !important;
+    }
+    &--height {
+      @include desktop-sm {
+        height: 261px !important;
+      }
+    }
+  }
+  &__locator {
+    @include desktop-sm {
+      width: 47%;
+    }
   }
   &--title {
-    padding: 3.5rem 0;
+    @include title-spacing;
     margin: 0;
     color: $color--primary--med;
+    @include desktop-sm {
+      text-align: left;
+      padding-bottom: 2.5rem;
+    }
   }
+
   &__form {
     @include wrapper;
     font-size: 1.4rem;
+    @include desktop-sm {
+      margin: 0;
+    }
+
     &--input {
       width: 100%;
       height: 4.5rem;
@@ -20,7 +54,12 @@
     &--msg {
       width: 100%;
       height: 15rem;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    @include desktop-sm {
+      order: 1;
+      padding: 0;
+      width: 47%;
     }
   }
 }

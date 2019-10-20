@@ -1,0 +1,30 @@
+.promo {
+  @include tab-port {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    display: none;
+    text-align: center;
+    @include tab-port {
+      display: inline-block;
+      width: 33.333%;
+      background-color: $color--primary--med;
+    }
+    &--main {
+      display: inline-block !important;
+      background-color: $color--primary--dark;
+      width: 100%;
+    }
+    @include tab-port {
+      width: 33.333%;
+    }
+  }
+  &--heading {
+    margin: 1.2rem 0 0;
+  }
+  &--sub {
+    margin: 0 0 1.2rem;
+    color: $color--primary;
+  }
+}

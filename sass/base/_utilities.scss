@@ -1,8 +1,17 @@
+.pb-2 {
+  padding-bottom: 2rem !important;
+}
+
 .text--light {
   color: $color--primary;
 }
 .text--white {
   color: $color--white;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .clearfix::after {

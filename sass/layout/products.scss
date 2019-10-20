@@ -1,19 +1,32 @@
 .products {
   @include wrapper;
   text-align: center;
-  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+  @include desktop-sm {
+    padding-bottom: 4rem;
+  }
   &--title {
-    padding: 3.5rem;
+    @include padding-Y;
     margin: 0;
   }
   &--sub {
     text-align: justify;
     margin: 0;
+
+    @include tab-port {
+      text-align: center;
+    }
   }
   &__list {
-    padding: 3.5rem 0;
+    @include title-spacing;
     margin: 0;
     list-style: none;
+    @include tab-port {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     &--div {
       position: relative;
     }
@@ -21,6 +34,15 @@
       border: 1px solid rgba($color--primary, 0.3);
       &:not(:last-child) {
         margin-bottom: 2rem;
+      }
+      @include tab-port {
+        width: 47%;
+        &:last-child {
+          margin-bottom: 2rem;
+        }
+      }
+      @include desktop-sm {
+        width: 32%;
       }
     }
     &--img {

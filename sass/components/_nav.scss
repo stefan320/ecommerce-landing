@@ -2,8 +2,9 @@
   &--btn {
     height: 100%;
     cursor: pointer;
+    margin-top: 0.67em;
     //Get back the extra transparent space caused by img background
-    margin-left: -5px;
+    margin-left: -3px;
   }
   &--checkbox {
     display: none;
@@ -23,7 +24,7 @@
     position: absolute;
     height: 0;
     width: 100%;
-    top: 56px;
+    top: 51px;
     left: 0;
     z-index: 4000;
     display: flex;
@@ -47,6 +48,7 @@
         font-weight: 400;
         border-bottom: 1px solid $color--primary;
         cursor: pointer;
+        transition: 0.3s color;
 
         &:hover {
           color: $color--secondary;

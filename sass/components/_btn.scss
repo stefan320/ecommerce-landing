@@ -1,6 +1,7 @@
 .btn {
-  padding: 1.8rem 6.5rem;
+  padding: 1.4rem 6.5rem;
   font-size: 1.2rem;
+  cursor: pointer;
   &--danger {
     background-color: $color--secondary;
     color: $color--white;
@@ -9,7 +10,11 @@
     background-color: $color--primary--dark;
     color: $color--white;
   }
-  &--full {
+  &--contact {
     width: 100%;
+    @include desktop-sm {
+      float: left;
+      width: initial;
+    }
   }
 }

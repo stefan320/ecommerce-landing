@@ -1,32 +1,82 @@
 .footer {
   color: $color--primary;
+
+  &--box {
+    @include desktop-sm {
+      @include wrapper;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @include desktop-sm {
+    background-color: $color--primary--dark;
+  }
+
   &__info {
-    @include wrapper;
+    @include padding-Y;
     background-color: $color--primary--med;
     text-align: center;
+
+    @include desktop-sm {
+      background-color: $color--primary--dark;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      width: 47%;
+    }
+
+    &--box {
+      @include desktop-sm {
+        display: inline-block;
+      }
+    }
+
+    &--box:not(:last-child) {
+      padding-bottom: 2rem;
+      @include desktop-sm {
+        padding-bottom: 0;
+      }
+    }
+
     &--header {
-      padding: 3.5rem 0 2rem;
+      padding-bottom: 1.6rem;
       margin: 0;
     }
+
     &--ul {
       list-style: none;
       margin: 0;
       padding: 0;
-      &:last-child {
-        padding-bottom: 3.5rem;
+      @include desktop-sm {
+        display: inline-block;
       }
     }
+
     &--li {
       display: inline-block;
       position: relative;
       font-size: 1.2rem;
-      padding: 0 1rem;
+      padding: 0 0.8rem;
+      @include desktop-sm {
+        display: block;
+        padding: 0.6rem 0;
+      }
+
       &:not(:last-child)::after {
         content: "|";
         position: absolute;
         right: -2px;
+        @include desktop-sm {
+          content: none;
+        }
       }
     }
+
     &--link,
     &--link:visited,
     &--link:link,
@@ -37,10 +87,17 @@
   }
   &__newsletter {
     @include wrapper;
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    @include padding-Y;
+
     background-color: $color--primary--dark;
     text-align: center;
+    @include desktop-sm {
+      width: 47%;
+      padding: 0;
+      margin: 0;
+      text-align: justify;
+    }
+
     &--header {
       margin: 0;
     }
